@@ -1,0 +1,169 @@
+:root{
+    --main-color: #fdc3c2;
+    --secondary-color: #ffc595;
+    --font-main-color: #43291a;
+}
+
+*{
+    font-family: 'Comfortaa', cursive;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* HEADER */
+
+header{
+    position: fixed;
+    z-index: 999999;
+}
+
+.navbar-container{
+    display:flex;
+    width: 100%;
+    height: 80px;
+
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.left-navbar-container{
+    display: flex;
+    width: 50vw;
+    justify-content: flex-start;
+    margin-left: 3vw;
+}
+
+.right-navbar-container{
+    display: flex;
+    width: 50vw;
+    justify-content: flex-end;
+    margin-right: 3vw;
+}
+
+.navbar-item{
+    color: var(--font-main-color);
+
+    transition: font-size 0.3s; 
+}
+
+.navbar-watermark{
+    font-weight: 700;
+    font-size: larger;
+}
+
+.navbar-products, .navbar-contact, .navbar-about{
+    padding-left: 2vw;
+}
+
+.navbar-container:hover{
+    background-color: #00000015;  
+}
+
+/* BANNER */
+
+.banner-container {
+    background-image: url('../svg/banner-svg-main-color.svg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-color: var(--secondary-color);
+    height: 600px;
+    width: 100%;
+
+    display: inline-block;
+    text-align: center;
+}
+
+.banner-item{
+    position: relative;
+    color: var(--font-main-color);
+    transition: opacity 0.3s;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.banner-description{
+    padding-top: 150px;
+}
+
+.change-banner-text{
+    opacity: 0;
+}
+
+/* PRODUCT SHOWCASE */
+
+.product-container{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: var(--main-color);  
+    height: 1600px;
+
+    margin-bottom: 1000vh;
+    transition: background-color 0.8s;
+    justify-content: center;
+}
+
+.product-item{
+    opacity: 0;
+
+    transition: opacity 0.5s;
+}
+
+.product-title{
+    padding-top: 150px; 
+}
+
+.change-product-text{
+    opacity: 1;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 575px){
+    .product-title{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 450px){
+    .navbar-item{
+        font-size: 0.9em;
+    }
+    
+    .navbar-watermark{
+        font-weight: 600;
+        font-size: large;
+    }
+
+    .product-title{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 370px){
+    .banner-description{
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 350px){
+    .navbar-item{
+        font-size: 0.7em;
+    }
+    
+    .navbar-watermark{
+        font-weight: 600;
+        font-size: smaller;
+    }
+
+    .product-title{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 320px){
+    .banner-description{
+        padding-top: 75px;
+    }
+}
