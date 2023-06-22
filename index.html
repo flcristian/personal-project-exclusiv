@@ -5,31 +5,182 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
     <script src="scripts/script.js"></script>
+    <script src="scripts/search.js"></script>
     <title>Project</title>
 </head>
 <body>
     <header class="navbar-container" id="navbar">
         <section class="left-navbar-container">
-            <a class="navbar-item navbar-watermark" href="index.html">Exclusiv</a>
+            <a class="navbar-watermark" href="index.html">Exclusiv</a>
         </section>
         <section class="right-navbar-container">
-            <a class="navbar-item navbar-home" href="index.html">Home</a>
-            <a class="navbar-item navbar-products" href="products.html">Products</a>
+            <a class="navbar-item navbar-home" href="index.html">Acasa</a>
             <a class="navbar-item navbar-contact" href="contact.html">Contact</a>
-            <a class="navbar-item navbar-about" href="about.html">About</a>
+            <a class="navbar-item navbar-about" href="about.html">Despre noi</a>
         </section>
     </header>
 
     <aside class="banner-container" id="banner">
-        <p class="banner-item banner-description" id="banner-text">Embrace your personal style with our fashion haven! Dive into an exquisite collection of contemporary attire that effortlessly showcases your unique flair. From captivating outfits to essential accessories, we offer a meticulously curated range that guarantees head-turning looks. Discover your fashion voice and exude confidence with every step.</p> 
+        <p class="banner-item banner-description">Embrace your personal style with our fashion haven! Dive into an exquisite collection of contemporary attire that effortlessly showcases your unique flair. From captivating outfits to essential accessories, we offer a meticulously curated range that guarantees head-turning looks. Discover your fashion voice and exude confidence with every step.</p> 
     </aside>
+    
+    <article class="products">
+        <section class="products-filters">
+            
+        </section>
 
-    <div class="product-container">
-        <h1 class="product-item product-title" id="product-text">Here are some of our products!</h1>
-    </div>
+        <div class="splitter">
+
+        </div>
+
+        <section class="products-search-display">
+            <section class="search-for-products">
+                <input class="products-search" type="text" name="search" onkeyup="search()" id="search-input" placeholder="Search products...">
+            </section>          
+            <section class="product-display">
+                <section class="product-list" id="product-list">
+                    <article class="product-item">
+                        <img class="product-image" src='https://placehold.it/240x320?text=aer' alt=''/>
+                        <div class="product-description">Rochie</div>
+                        <div class="product-price">68 RON</div>
+                        <aside class="product-button">
+                            <a class="product-button-text" href="#">Detalii</a>
+                        </aside>
+                    </article>
+                    <article class="product-item">
+                        <img class="product-image" src='https://placehold.it/240x320?text=aerodrom' alt=''/>
+                        <div class="product-description">Geaca</div>
+                        <div class="product-price">120 RON</div>
+                        <aside class="product-button">
+                            <a class="product-button-text" href="#">Detalii</a>
+                        </aside>
+                    </article>
+                    <article class="product-item">
+                        <img class="product-image" src='https://placehold.it/240x320?text=casa' alt=''/>
+                        <div class="product-description">Vesta</div>
+                        <div class="product-price">320 RON</div>
+                        <aside class="product-button">
+                            <a class="product-button-text" href="#">Detalii</a>
+                        </aside>
+                    </article>
+                    <article class="product-item">
+                        <img class="product-image" src='https://placehold.it/240x320?text=casuta' alt=''/>
+                        <div class="product-description">Blugi</div> 
+                        <div class="product-price">70 RON</div>
+                        <aside class="product-button">
+                            <a class="product-button-text" href="#">Detalii</a>
+                        </aside>
+                    </article>
+                    <article class="product-item">
+                        <img class="product-image" src='https://placehold.it/240x320?text=aerodinamica' alt=''/>
+                        <div class="product-description">Pantaloni</div>
+                        <div class="product-price">55 RON</div>
+                        <aside class="product-button">
+                            <a class="product-button-text" href="#">Detalii</a>
+                        </aside>
+                    </article>
+                    <article class="product-item">
+                        <img class="product-image" src='https://placehold.it/240x320?text=geaca' alt=''/>
+                        <div class="product-description">Rochie</div>
+                        <div class="product-price">110 RON</div>
+                        <aside class="product-button">
+                            <a class="product-button-text" href="#">Detalii</a>
+                        </aside>
+                    </article>
+                    <article class="product-item">
+                        <img class="product-image" src='https://placehold.it/240x320?text=geanta' alt=''/>
+                        <div class="product-description">Geanta</div>
+                        <div class="product-price">50 RON</div>
+                        <aside class="product-button">
+                            <a class="product-button-text" href="#">Detalii</a>
+                        </aside>
+                    </article>
+                    <article class="product-item">
+                        <img class="product-image" src='https://placehold.it/240x320?text=haina' alt=''/>
+                        <div class="product-description">Top</div> 
+                        <div class="product-price">40 RON</div>
+                        <aside class="product-button">
+                            <a class="product-button-text" href="#">Detalii</a>
+                        </aside>
+                    </article>
+                    <article class="product-item">
+                        <img class="product-image" src='https://placehold.it/240x320?text=plasa' alt=''/>
+                        <div class="product-description">Tricou</div>
+                        <div class="product-price">35 RON</div>
+                        <aside class="product-button">
+                            <a class="product-button-text" href="#">Detalii</a>
+                        </aside>
+                    </article>
+                    <article class="product-item">
+                        <img class="product-image" src='https://placehold.it/240x320?text=caciula' alt=''/>
+                        <div class="product-description">Fusta</div>
+                        <div class="product-price">65 RON</div>
+                        <aside class="product-button">
+                            <a class="product-button-text" href="#">Detalii</a>
+                        </aside>
+                    </article>
+                    <article class="product-item">
+                        <img class="product-image" src='https://placehold.it/240x320?text=pantaloni' alt=''/>
+                        <div class="product-description">Bluza</div>
+                        <div class="product-price">68 RON</div>
+                        <aside class="product-button">
+                            <a class="product-button-text" href="#">Detalii</a>
+                        </aside>
+                    </article>
+                    <article class="product-item">
+                        <img class="product-image" src='https://placehold.it/240x320?text=blugi' alt=''/>
+                        <div class="product-description">Hanorac</div>
+                        <div class="product-price">100 RON</div> 
+                        <aside class="product-button">
+                            <a class="product-button-text" href="#">Detalii</a>
+                        </aside>
+                    </article>
+                    <article class="product-item">
+                        <img class="product-image" src='https://placehold.it/240x320?text=vesta' alt=''/>
+                        <div class="product-description">Pantaloni</div>
+                        <div class="product-price">120 RON</div>
+                        <aside class="product-button">
+                            <a class="product-button-text" href="#">Detalii</a>
+                        </aside>
+                    </article>
+                    <article class="product-item">
+                        <img class="product-image" src='https://placehold.it/240x320?text=casa' alt=''/>
+                        <div class="product-description">Shorts</div>
+                        <div class="product-price">55 RON</div>
+                        <aside class="product-button">
+                            <a class="product-button-text" href="#">Detalii</a>
+                        </aside>
+                    </article>
+                    <article class="product-item">
+                        <img class="product-image" src='https://placehold.it/240x320?text=aerodinamic' alt=''/>
+                        <div class="product-description">Trenning</div>
+                        <div class="product-price">60 RON</div>
+                        <aside class="product-button">
+                            <a class="product-button-text" href="#">Detalii</a>
+                        </aside>
+                    </article>
+                    <article class="product-item">
+                        <img class="product-image" src='https://placehold.it/240x320?text=casuta' alt=''/>
+                        <div class="product-description">Geaca</div> 
+                        <div class="product-price">80 RON</div>
+                        <aside class="product-button">
+                            <a class="product-button-text" href="#">Detalii</a>
+                        </aside>
+                    </article>
+                </section>
+            </section>
+        </section>
+    </article>
+
+    <!-- <section class="test">
+        <div class="test-item">Lorem ipsum dolor sit amet.</div>
+        <div class="test-item">Lorem ipsum dolor sit amet. Lorem, ipsum dolor.</div>
+        <div class="test-item">Lorem ipsum dolor sit amet. Lorem.</div>
+        <div class="test-item">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+    </section> -->
 </body>
 </html>

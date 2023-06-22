@@ -1,11 +1,13 @@
 :root{
-    --main-color: #fdc3c2;
-    --secondary-color: #ffc595;
-    --font-main-color: #43291a;
+    --main-color: black;
+    --secondary-color: white;
+    --detail-color: grey;
+    --font-main-color: black;
+    --font-secondary-color: white;
 }
 
 *{
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
 a{
@@ -14,13 +16,11 @@ a{
 
 /* HEADER */
 
-header{
+.navbar-container{
     position: fixed;
     z-index: 999999;
-}
-
-.navbar-container{
     display:flex;
+    background-color: var(--main-color);
     width: 100%;
     height: 80px;
 
@@ -30,45 +30,46 @@ header{
 
 .left-navbar-container{
     display: flex;
-    width: 50vw;
+    width: 40vw;
     justify-content: flex-start;
-    margin-left: 3vw;
+    margin-left: 5vw;
 }
 
 .right-navbar-container{
     display: flex;
-    width: 50vw;
+    width: 60vw;
     justify-content: flex-end;
-    margin-right: 3vw;
+    margin-right: 5vw;
 }
 
 .navbar-item{
-    color: var(--font-main-color);
+    color: var(--font-secondary-color);
 
     transition: font-size 0.3s; 
 }
 
 .navbar-watermark{
     font-weight: 700;
-    font-size: larger;
+    font-size: 1.5em;
+    color: var(--font-secondary-color);
+
+    transition: font-size 0.3s; 
 }
 
 .navbar-products, .navbar-contact, .navbar-about{
     padding-left: 2vw;
 }
 
-.navbar-container:hover{
-    background-color: #00000015;  
+.change-navbar{
+    background-color: rgba(0, 0, 0, 0.975);
 }
 
 /* BANNER */
 
 .banner-container {
-    background-image: url('../svg/banner-svg-main-color.svg');
-    background-repeat: no-repeat;
-    background-position: right bottom;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.37);
     background-color: var(--secondary-color);
-    height: 600px;
+    height: 200px;
     width: 100%;
 
     display: inline-block;
@@ -84,86 +85,215 @@ header{
 }
 
 .banner-description{
-    padding-top: 150px;
+    padding-top: 100px;
+
+    transition: font-size 0.4s;
 }
 
-.change-banner-text{
-    opacity: 0;
-}
+/* PRODUCT LIST */
 
-/* PRODUCT SHOWCASE */
-
-.product-container{
-    display:flex;
+.products{
+    display: flex;
+    
     flex-wrap: wrap;
-    background-color: var(--main-color);  
-    height: 1600px;
+}
 
-    margin-bottom: 1000vh;
-    transition: background-color 0.8s;
+.products-filters{
+    height: 300px;
+    width: 20%;
+}
+
+.products-search-display{
+    display: inline-block;
+    width: 80%;
+}
+
+.search-for-products{
+    margin-top: 5vh;
+    display: flex;
     justify-content: center;
 }
 
+.product-list{
+    margin-top: 5vh;
+    margin-bottom: 400px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    list-style-type: none;
+
+    display: grid;
+    grid-template-columns: repeat(4, 16vw);
+    column-gap: 5vh;
+    row-gap: 10vh;
+    justify-content: space-between;
+}
+
 .product-item{
-    opacity: 0;
+    text-align: center;
+    padding-bottom: 15px;
 
-    transition: opacity 0.5s;
+    transition: box-shadow 0.3s;
 }
 
-.product-title{
-    padding-top: 150px; 
+.product-image{
+    width: 100%;
 }
 
-.change-product-text{
-    opacity: 1;
+.product-description{
+    font-weight: bold;
+    color: rgb(32, 32, 32);
 }
+
+.product-price{
+    padding-top: 3px;
+    font-weight: 1000;
+    color:rgb(12, 12, 12);
+}
+
+.product-button{
+    display: flex;
+    justify-content: center;
+}
+
+.product-button-text{
+    width: 60%;
+    margin-top: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: black;
+
+    transition: background-color 0.4s;
+    color: white;
+}
+
+.product-button-text:hover{
+    background-color: rgb(129, 43, 43);
+}
+
+.product-item:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.336);
+}
+
+/* SPLITTER */
+
+.splitter{
+    display: none;
+    flex-basis: 100%;
+    height: 0;
+}
+
+/* TEST */
+
+/* .test{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 15vw);
+    justify-content: space-between;
+    margin-bottom: 1000px;
+}
+
+.test-item{
+    border: 1px solid black;
+} */
 
 /* RESPONSIVENESS */
 
-@media (max-width: 575px){
-    .product-title{
-        font-size: 1.5em;
+@media (max-width: 1550px){
+    .banner-container{
+        height: 250px;
     }
 }
 
-@media (max-width: 450px){
-    .navbar-item{
-        font-size: 0.9em;
+@media (max-width: 1100px){
+    .product-list{
+        grid-template-columns: repeat(3, 20vw);
     }
     
-    .navbar-watermark{
-        font-weight: 600;
-        font-size: large;
-    }
-
-    .product-title{
-        font-size: 1em;
+    .product-image{
+        width: 20vw;
     }
 }
 
-@media (max-width: 370px){
+@media (max-width: 1000px){
+    .banner-container{
+        height: 275px;
+    }
+}
+
+@media (max-width: 700px){
+    .products-filters{
+        height: 300px;
+    }
+
+    .splitter{
+        display: 1;
+    }
+}
+
+@media (max-width: 650px){  
+    .banner-container{
+        height: 300px;
+    }
+
+    .splitter{
+        display:block;
+    }
+
+    .products-search-display{
+        width: 100%;
+    }
+
+    .product-list{
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        column-gap: 5vw;
+    }
+    
+    .product-image{
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px){
     .banner-description{
-        padding-top: 100px;
-    }
-}
-
-@media (max-width: 350px){
-    .navbar-item{
-        font-size: 0.7em;
-    }
-    
-    .navbar-watermark{
-        font-weight: 600;
-        font-size: smaller;
-    }
-
-    .product-title{
         font-size: 0.8em;
     }
 }
 
-@media (max-width: 320px){
-    .banner-description{
-        padding-top: 75px;
+@media (max-width: 500px){
+    .navbar-watermark{
+        font-size: 1.25em;
+    }
+
+    .navbar-item{
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 450px){
+    .navbar-watermark{
+        font-size: 1em;
+    }
+
+    .navbar-item{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 370px){
+    .navbar-item{
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 350px){
+    .banner-container{
+        height: 350px;
+    }
+}
+
+@media (max-width: 330px){
+    .navbar-item{
+        font-size: 0.6em;
     }
 }
