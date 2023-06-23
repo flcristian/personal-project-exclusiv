@@ -31,7 +31,12 @@
     <article class="products" id="products">
         <section class="products-search-display">
             <section class="search-for-products">
-                <input class="products-search" type="text" name="search" onkeyup="search()" onkeyup="show()" id="search-input" placeholder="Search products...">
+                <select class="products-filters" id="products-filters" name="filters" onchange="displayWithFilters()">
+                    <option value="none">Fara filtru</option>
+                    <option value="price-ascending">Pret crescator</option>
+                    <option value="price-descending">Pret descrescator</option>
+                </select>
+                <input class="products-search" type="text" name="search"  onkeyup="handleKeyPress(event)" id="search-input" placeholder="Search products...">
             </section>          
             <section class="product-display">
                 <section class="product-list" id="product-list">

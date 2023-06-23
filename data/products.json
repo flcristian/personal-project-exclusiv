@@ -1,90 +1,96 @@
 [
     {
-        "id":1,
         "description":"Geaca",
         "path":"https://placehold.it/240x320?text=poza",
-        "price": 68
+        "price": 68,
+        "tags":["geaca"]
     },
     {
-        "id":2,
         "description":"Bluza",
         "path":"https://placehold.it/240x320?text=poza",
-        "price": 110
+        "price": 110,
+        "tags":["bluza"]
     },
     {
-        "id":3,
         "description":"Blugi",
         "path":"https://placehold.it/240x320?text=poza",
-        "price": 55
+        "price": 55,
+        "tags":["blugi","pantaloni","denim"]
     }
     ,
     {
-        "id":3,
         "description":"Vesta",
         "path":"https://placehold.it/240x320?text=poza",
-        "price": 120
+        "price": 120,
+        "tags":["vesta"]
     }
     ,
     {
-        "id":3,
         "description":"Rochie",
         "path":"https://placehold.it/240x320?text=poza",
-        "price": 130
+        "price": 130,
+        "tags":["rochie"]
     }
     ,
     {
-        "id":3,
         "description":"Geaca Bomber",
         "path":"https://placehold.it/240x320?text=poza",
-        "price": 210
+        "price": 210,
+        "tags":["bomber","geaca","piele"]
     }
     ,
     {
-        "id":3,
         "description":"Pantaloni Trenning",
         "path":"https://placehold.it/240x320?text=poza",
-        "price": 60
+        "price": 60,
+        "tags":["pantaloni","trenning","sport"]
     }
     ,
     {
-        "id":3,
         "description":"Hanorac",
         "path":"https://placehold.it/240x320?text=poza",
-        "price": 65
+        "price": 65,
+        "tags":["bluza","hanorac"]
     }
     ,
     {
-        "id":3,
         "description":"Pulover",
         "path":"https://placehold.it/240x320?text=poza",
-        "price": 76
+        "price": 76,
+        "tags":["bluza","pulover"]
     }
     ,
     {
-        "id":3,
         "description":"Fusta",
         "path":"https://placehold.it/240x320?text=poza",
-        "price": 40
+        "price": 40,
+        "tags":["fusta"]
     }
     ,
     {
-        "id":3,
         "description":"Shorts",
         "path":"https://placehold.it/240x320?text=poza",
-        "price": 60
+        "price": 60,
+        "tags":["pantaloni","shorts","pantaloni scurti"]
     }
     ,
     {
-        "id":3,
         "description":"Camasa",
         "path":"https://placehold.it/240x320?text=poza",
-        "price": 82
+        "price": 82,
+        "tags":["bluza","camasa"]
     }
     ,
     {
-        "id":3,
         "description":"Tricou",
         "path":"https://placehold.it/240x320?text=poza",
-        "price": 45
+        "price": 45,
+        "tags":["bluza", "tricou"]
+    },
+    {
+        "description":"Palton",
+        "path":"https://placehold.it/240x320?text=poza",
+        "price": 160,
+        "tags":["palton", "geaca"]
     }
 ]
