@@ -60,6 +60,11 @@ a{
     padding-left: 2vw;
 }
 
+.navbar-instagram{
+    padding-left: 25px;
+    padding-top: 1px;
+}
+
 .change-navbar{
     background-color: rgba(0, 0, 0, 0.975);
 }
@@ -104,6 +109,12 @@ a{
     }
 }
 
+@media(max-width:900px){
+    .navbar-instagram{
+        padding-left: 15px;
+    }
+}
+
 @media (max-width: 650px){  
     .banner-container{
         height: 300px;
@@ -133,6 +144,10 @@ a{
 
     .navbar-item{
         font-size: 0.8em;
+    }
+
+    .navbar-instagram{
+        padding-left: 10px;
     }
 }
 

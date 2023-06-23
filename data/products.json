@@ -1,0 +1,90 @@
+[
+    {
+        "id":1,
+        "description":"Geaca",
+        "path":"https://placehold.it/240x320?text=poza",
+        "price": 68
+    },
+    {
+        "id":2,
+        "description":"Bluza",
+        "path":"https://placehold.it/240x320?text=poza",
+        "price": 110
+    },
+    {
+        "id":3,
+        "description":"Blugi",
+        "path":"https://placehold.it/240x320?text=poza",
+        "price": 55
+    }
+    ,
+    {
+        "id":3,
+        "description":"Vesta",
+        "path":"https://placehold.it/240x320?text=poza",
+        "price": 120
+    }
+    ,
+    {
+        "id":3,
+        "description":"Rochie",
+        "path":"https://placehold.it/240x320?text=poza",
+        "price": 130
+    }
+    ,
+    {
+        "id":3,
+        "description":"Geaca Bomber",
+        "path":"https://placehold.it/240x320?text=poza",
+        "price": 210
+    }
+    ,
+    {
+        "id":3,
+        "description":"Pantaloni Trenning",
+        "path":"https://placehold.it/240x320?text=poza",
+        "price": 60
+    }
+    ,
+    {
+        "id":3,
+        "description":"Hanorac",
+        "path":"https://placehold.it/240x320?text=poza",
+        "price": 65
+    }
+    ,
+    {
+        "id":3,
+        "description":"Pulover",
+        "path":"https://placehold.it/240x320?text=poza",
+        "price": 76
+    }
+    ,
+    {
+        "id":3,
+        "description":"Fusta",
+        "path":"https://placehold.it/240x320?text=poza",
+        "price": 40
+    }
+    ,
+    {
+        "id":3,
+        "description":"Shorts",
+        "path":"https://placehold.it/240x320?text=poza",
+        "price": 60
+    }
+    ,
+    {
+        "id":3,
+        "description":"Camasa",
+        "path":"https://placehold.it/240x320?text=poza",
+        "price": 82
+    }
+    ,
+    {
+        "id":3,
+        "description":"Tricou",
+        "path":"https://placehold.it/240x320?text=poza",
+        "price": 45
+    }
+]

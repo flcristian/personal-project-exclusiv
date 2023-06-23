@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"><meta name="description" content="Produse magazin online pentru femei. Haine perfecte pentru stilul tau">
+    <meta name="keywords" content="magazin online, imbracaminte, imbracaminte femei, haine dama, haine dama online, haine femei, haine made in Roamania, haine online, rochii dama, rochii online, bluze femei, bluze, pantaloni, geci, veste, bluze femei, pantaloni femei, veste femei">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/207839565f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/products.css">
     <script src="scripts/script.js"></script>
     <script src="scripts/search.js"></script>
-    <title>Project</title>
+    <script src="scripts/show-products.js"></script>
+    <title>Exclusiv - Contact</title>
 </head>
 <body>
     <header class="navbar-container" id="navbar">
@@ -21,147 +24,24 @@
             <a class="navbar-item navbar-home" href="index.html">Acasa</a>
             <a class="navbar-item navbar-products" href="products.html">Produse</a>
             <a class="navbar-item navbar-contact" href="contact.html">Contact</a>
+            <a class="navbar-item navbar-instagram" href="https://www.instagram.com/exclusiv.ro/" target="_blank"><i class=" fa-brands fa-instagram fa-lg" style="color: #ffffff"></i></a>
         </section>
     </header>
     
-    <article class="products">
+    <article class="products" id="products">
         <section class="products-search-display">
             <section class="search-for-products">
-                <input class="products-search" type="text" name="search" onkeyup="search()" id="search-input" placeholder="Search products...">
+                <input class="products-search" type="text" name="search" onkeyup="search()" onkeyup="show()" id="search-input" placeholder="Search products...">
             </section>          
             <section class="product-display">
                 <section class="product-list" id="product-list">
-                    <article class="product-item">
-                        <img class="product-image" src='https://placehold.it/240x320?text=poza' alt=''/>
-                        <div class="product-description">Rochie</div>
-                        <div class="product-price">68 RON</div>
-                        <aside class="product-button">
-                            <a class="product-button-text" href="#">Detalii</a>
-                        </aside>
-                    </article>
-                    <article class="product-item">
-                        <img class="product-image" src='https://placehold.it/240x320?text=poza' alt=''/>
-                        <div class="product-description">Geaca</div>
-                        <div class="product-price">120 RON</div>
-                        <aside class="product-button">
-                            <a class="product-button-text" href="#">Detalii</a>
-                        </aside>
-                    </article>
-                    <article class="product-item">
-                        <img class="product-image" src='https://placehold.it/240x320?text=poza' alt=''/>
-                        <div class="product-description">Vesta</div>
-                        <div class="product-price">320 RON</div>
-                        <aside class="product-button">
-                            <a class="product-button-text" href="#">Detalii</a>
-                        </aside>
-                    </article>
-                    <article class="product-item">
-                        <img class="product-image" src='https://placehold.it/240x320?text=poza' alt=''/>
-                        <div class="product-description">Blugi</div> 
-                        <div class="product-price">70 RON</div>
-                        <aside class="product-button">
-                            <a class="product-button-text" href="#">Detalii</a>
-                        </aside>
-                    </article>
-                    <article class="product-item">
-                        <img class="product-image" src='https://placehold.it/240x320?text=poza' alt=''/>
-                        <div class="product-description">Pantaloni</div>
-                        <div class="product-price">55 RON</div>
-                        <aside class="product-button">
-                            <a class="product-button-text" href="#">Detalii</a>
-                        </aside>
-                    </article>
-                    <article class="product-item">
-                        <img class="product-image" src='https://placehold.it/240x320?text=poza' alt=''/>
-                        <div class="product-description">Rochie</div>
-                        <div class="product-price">110 RON</div>
-                        <aside class="product-button">
-                            <a class="product-button-text" href="#">Detalii</a>
-                        </aside>
-                    </article>
-                    <article class="product-item">
-                        <img class="product-image" src='https://placehold.it/240x320?text=poza' alt=''/>
-                        <div class="product-description">Geanta</div>
-                        <div class="product-price">50 RON</div>
-                        <aside class="product-button">
-                            <a class="product-button-text" href="#">Detalii</a>
-                        </aside>
-                    </article>
-                    <article class="product-item">
-                        <img class="product-image" src='https://placehold.it/240x320?text=poza' alt=''/>
-                        <div class="product-description">Top</div> 
-                        <div class="product-price">40 RON</div>
-                        <aside class="product-button">
-                            <a class="product-button-text" href="#">Detalii</a>
-                        </aside>
-                    </article>
-                    <article class="product-item">
-                        <img class="product-image" src='https://placehold.it/240x320?text=poza' alt=''/>
-                        <div class="product-description">Tricou</div>
-                        <div class="product-price">35 RON</div>
-                        <aside class="product-button">
-                            <a class="product-button-text" href="#">Detalii</a>
-                        </aside>
-                    </article>
-                    <article class="product-item">
-                        <img class="product-image" src='https://placehold.it/240x320?text=poza' alt=''/>
-                        <div class="product-description">Fusta</div>
-                        <div class="product-price">65 RON</div>
-                        <aside class="product-button">
-                            <a class="product-button-text" href="#">Detalii</a>
-                        </aside>
-                    </article>
-                    <article class="product-item">
-                        <img class="product-image" src='https://placehold.it/240x320?text=poza' alt=''/>
-                        <div class="product-description">Bluza</div>
-                        <div class="product-price">68 RON</div>
-                        <aside class="product-button">
-                            <a class="product-button-text" href="#">Detalii</a>
-                        </aside>
-                    </article>
-                    <article class="product-item">
-                        <img class="product-image" src='https://placehold.it/240x320?text=poza' alt=''/>
-                        <div class="product-description">Hanorac</div>
-                        <div class="product-price">100 RON</div> 
-                        <aside class="product-button">
-                            <a class="product-button-text" href="#">Detalii</a>
-                        </aside>
-                    </article>
-                    <article class="product-item">
-                        <img class="product-image" src='https://placehold.it/240x320?text=poza' alt=''/>
-                        <div class="product-description">Pantaloni</div>
-                        <div class="product-price">120 RON</div>
-                        <aside class="product-button">
-                            <a class="product-button-text" href="#">Detalii</a>
-                        </aside>
-                    </article>
-                    <article class="product-item">
-                        <img class="product-image" src='https://placehold.it/240x320?text=poza' alt=''/>
-                        <div class="product-description">Shorts</div>
-                        <div class="product-price">55 RON</div>
-                        <aside class="product-button">
-                            <a class="product-button-text" href="#">Detalii</a>
-                        </aside>
-                    </article>
-                    <article class="product-item">
-                        <img class="product-image" src='https://placehold.it/240x320?text=poza' alt=''/>
-                        <div class="product-description">Trenning</div>
-                        <div class="product-price">60 RON</div>
-                        <aside class="product-button">
-                            <a class="product-button-text" href="#">Detalii</a>
-                        </aside>
-                    </article>
-                    <article class="product-item">
-                        <img class="product-image" src='https://placehold.it/240x320?text=poza' alt=''/>
-                        <div class="product-description">Geaca</div> 
-                        <div class="product-price">80 RON</div>
-                        <aside class="product-button">
-                            <a class="product-button-text" href="#">Detalii</a>
-                        </aside>
-                    </article>
+                    <!-- ADDED FROM PRODUCTS.JSON  -->
                 </section>
             </section>
-        </section>
+            <aside class="no-matches" id="no-matches">
+                <h1>Nu a fost gasit niciun produs.</h1>
+            </aside>
+        </section>  
     </article>
 </body>
 </html>
