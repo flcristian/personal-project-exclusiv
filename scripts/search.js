@@ -80,7 +80,7 @@ function displayWithFilters(){
   returnData()
   .then(data =>{
     applyFilters(data);
-    searchtest(data);
+    search(data);
   });
 }
 
@@ -100,47 +100,7 @@ function containsInTags(tags, tagcount, filter){
   return false;
 }
 
-function search(){
-    var input, filter, list, product, nomatches, i;
-    input = document.getElementById('search-input');
-    filter = input.value.toUpperCase();
-    list = document.getElementById("product-list");
-    nomatches = document.getElementById("no-matches");
-
-    while(list.firstChild){
-      list.removeChild(list.firstChild);
-    }
-
-    return fetch('data/products.json')
-    .then(response => response.json())
-    .then(data => {
-      var count = 0;
-      for(i = 0;i<data.length;i++){
-        var tagcount = 0;
-        while(data[i].tags[tagcount]){
-          tagcount++;
-        }
-
-        var products = [];
-        if(containsInDescription(data[i].description, filter) || containsInTags(data[i].tags, tagcount, filter)){
-          list.appendChild(createProduct(data[i]));
-          count = count + 1;
-        }
-      }
-        
-      if(count == 0){
-         list.classList.add('change-product-list');
-        nomatches.classList.add('change-no-matches');
-      } 
-      else{
-         list.classList.remove('change-product-list');
-         nomatches.classList.remove('change-no-matches');
-      }
-      return data;
-    });
-}
-
-function searchtest(data){
+function search(data){
   var input, filter, list, product, nomatches, i;
   input = document.getElementById('search-input');
   filter = input.value.toUpperCase();
