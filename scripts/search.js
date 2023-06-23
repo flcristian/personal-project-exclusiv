@@ -38,9 +38,10 @@ function createProduct(data){
 }
 
 function handleKeyPress(event) {
-  if(event.key == "Enter"){
-    displayWithFilters();
-  }
+  // if(event.key == "Enter"){
+  //   displayWithFilters();
+  // }
+  displayWithFilters();
 }
 
 function returnData(){
