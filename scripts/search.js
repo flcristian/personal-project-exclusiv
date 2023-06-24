@@ -62,7 +62,7 @@ function filterDataPriceDescending(data){
 }
 
 function applyFilters(data){
-  var filter = document.getElementById("products-filters");
+  var filter = document.getElementById("product-filters");
 
   switch(filter.value){
     case "none":
