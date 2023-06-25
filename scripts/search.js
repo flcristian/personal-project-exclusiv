@@ -1,39 +1,27 @@
 function createProduct(data){
-  // ADDING PRODUCT ITEM ARTICLE
-  var productItem = document.createElement("article");
+  const productItem = document.createElement("article");
   productItem.classList.add("product-item");
-
-  // ADDING PRODUCT IMAGE
-  var productImage = document.createElement("img");
+  const productImage = document.createElement("img");
   productImage.classList.add("product-image");
   productImage.src = data.path;
   productImage.alt = '';
-
-  // ADDING PRODUCT DESCRIPTION
-  var productDescription = document.createElement("div");
+  const productDescription = document.createElement("div");
   productDescription.classList.add('product-description');
   productDescription.textContent = data.description;
-
-  // ADDING PRODUCT PRICE
-  var productPrice = document.createElement("div");
+  const productPrice = document.createElement("div");
   productPrice.classList.add("product-price");
   productPrice.textContent = data.price + " RON";
-
-  // ADDING PRODUCT BUTTON
-  var productButtonArea = document.createElement("aside");
+  const productButtonArea = document.createElement("aside");
   productButtonArea.classList.add("product-button");
-  var productButton = document.createElement("a");
+  const productButton = document.createElement("a");
   productButton.classList.add("product-button-text");
   productButton.href = "contact.html";
   productButton.textContent = "Contact";
   productButtonArea.appendChild(productButton);
-
-  // ADDING PROPERTIES TO PRODUCT ITEM
   productItem.appendChild(productImage);
   productItem.appendChild(productDescription);
   productItem.appendChild(productPrice);
   productItem.appendChild(productButtonArea);
-
   return productItem;
 }
 
@@ -63,7 +51,6 @@ function filterDataPriceDescending(data){
 
 function applyFilters(data){
   var filter = document.getElementById("product-filters");
-
   switch(filter.value){
     case "none":
       break;
@@ -106,25 +93,21 @@ function search(data){
   filter = input.value.toUpperCase();
   list = document.getElementById("product-list");
   nomatches = document.getElementById("no-matches");
-
   while(list.firstChild){
     list.removeChild(list.firstChild);
   }
-
   var count = 0;
   for(i = 0;i<data.length;i++){
     var tagcount = 0;
     while(data[i].tags[tagcount]){
       tagcount++;
     }
-
     var products = [];
     if(containsInDescription(data[i].description, filter) || containsInTags(data[i].tags, tagcount, filter)){
       list.appendChild(createProduct(data[i]));
       count = count + 1;
     }
   }
-    
   if(count == 0){
      list.classList.add('change-product-list');
     nomatches.classList.add('change-no-matches');

@@ -7,7 +7,7 @@
 }
 
 *{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a{
@@ -36,6 +36,12 @@ a{
     font-size: 2em;
     font-weight: 500;
     text-shadow: 1px 1px 4px  rgba(255, 255, 255, 0.651);
+
+    transition: text-shadow 0.2s;
+}
+
+.navbar-watermark:hover{
+    text-shadow: 1px 1px 6px  rgb(255, 255, 255);
 }
 
 .right-navbar-container{
@@ -49,6 +55,12 @@ a{
     font-weight: 500;
     font-size: 1.1em;
     text-shadow: 1px 1px 4px  rgba(255, 255, 255, 0.651);
+
+    transition: text-shadow 0.2s;
+}
+
+.navbar-item:hover{
+    text-shadow: 1px 1px 6px  rgb(255, 255, 255);
 }
 
 /* BANNER */
@@ -84,6 +96,7 @@ a{
 
 .product-title{
     font-family: 'Gruppo', 'sans-serif';
+    text-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.507);
 }
 
 /* PRODUCT SEARCH  */
@@ -107,6 +120,13 @@ a{
     margin-bottom: 10px;
     height: 30px;
     width: 40vw;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.582);
+
+    transition: box-shadow 0.2s;
+}
+
+.product-search:focus{
+    box-shadow: 0 0 8px rgb(0, 0, 0);
 }
 
 .product-filters{
@@ -116,6 +136,9 @@ a{
     height: 35px;
     padding: 5px;
     width: 40vw;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.582);
+
+    transition: box-shadow 0.2s;
 }
 
 .product-filters{
@@ -127,6 +150,7 @@ a{
 .product-filters:focus{
     outline: none;
     border: 2px solid rgb(99, 99, 99);
+    box-shadow: 0 0 8px rgb(0, 0, 0);
 }
 
 .splitter-search{
